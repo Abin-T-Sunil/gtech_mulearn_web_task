@@ -1,0 +1,165 @@
+.first_bac{
+  width:100%;
+  background-image:url("/public/first\ background.png ");
+  background-position: center;
+  background-size: cover;
+  min-height: 109vh;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6%;
+  align-items: center;
+}
+.nav_logo{
+  width:90px;
+  height: 90px;
+}
+.nav_menu{
+  flex: 1;
+  text-align:right;
+}
+.nav_menu ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0px 12px;
+  position: relative; 
+  border-right: 1px solid white;
+  padding-left: 20px ;
+}
+.links{
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-size:20px ;
+}
+.links::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin:auto ;
+  transition: 0.5s;
+}
+.links:hover::after{
+  width: 100%;
+}
+.header{
+  width:90%;
+  color: white;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.header h1{
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px; 
+}
+.header h3{
+  font-family: Crimson Text;
+  letter-spacing: 1em;
+  padding-bottom: 5em;
+}
+.header a{
+  letter-spacing: 0.42em;
+  font-family: Open Sans;
+  color: white;
+  text-decoration-line: underline;
+  font-size: 22px;
+} 
+nav .fa{
+  display: none;
+}
+@media(max-width:843px){
+  .header  h1{
+      font-size: 50px;
+  }
+  .header h3{
+      font-size: 10px;
+  }
+  .header a{
+      font-size: 10px;
+  }
+  .nav_menu ul li{
+      display: block;
+      padding-bottom: 15px;
+  }
+  .nav_menu{
+      position: absolute;
+      background: #f44336;
+      height: 40vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2; 
+      transition: 1s; 
+  }
+  nav .fa{
+      display: block;
+      color: white;
+      margin:10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .nav_menu li{
+      padding: 30px;
+  }
+}
+
+.sec_bac{
+  width:100%;
+  background-image:url("/public/home_photo.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 109vh;
+  position: relative;
+  color: white;
+}
+.sec_title{
+  width:90%;
+  color: white;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;   
+}  
+.sec_title h3{
+  font-size: 66px;
+  text-align: left;
+}
+.sec_title h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  text-shadow: -5px 5px 0px #2E4EC0;
+  border-bottom: 2px solid white;
+  text-align: left;
+}
+.sec_title h4{
+  text-align: right;
+  font-family: 'Poppins Medium';
+  font-size: 38px;
+}
+@media(max-width:1100px){
+  .sec_title h3{
+      font-size: 40px;
+  }
+  .sec_title h1{
+      font-size: 50px;
+  }
+  .sec_title h4{
+      font-size: 28px;
+  }
+}
+
+/* second page completed */
+
